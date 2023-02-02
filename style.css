@@ -121,6 +121,10 @@ a:hover{
     #div_captcha{
         max-width: 30rem;
     }
+
+    h3{
+        font-size: 1.5rem;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -141,6 +145,10 @@ a:hover{
     .mario{
         width: 1.5rem;
     }
+
+    h3{
+        font-size: 1.25rem;
+    }
 }
 
 @media screen and (max-width: 425px) {
@@ -159,5 +167,9 @@ a:hover{
     }
     h1{
         font-size: 3rem;
+    }
+
+    h3{
+        font-size: 1.1rem;
     }
 }
