@@ -41,11 +41,14 @@ input_captcha.addEventListener("keyup" , function(e){
     if(respuesta == captcha){
         sonido_correcto.play()
         html_captcha.innerHTML = `¡Eres humano<img src="./multimedia/./mario.gif" alt="" class="mario">!`
+        html_captcha.style.backgroundColor="#52b788"
+        html_captcha.style.animation="shake 2s linear infinite"
     }
     if(respuesta.length > 4){
         if(respuesta != captcha){
             sonido_error.play()
             html_captcha.innerText = `¡Maldito Robot!`
+            html_captcha.style.backgroundColor="red"
             setTimeout(recargar , 2000)
         }
     }
