@@ -20,7 +20,7 @@ function caracter_al_azar(cantidad){
     for (let i = 0; i < captcha_numerico.length; i++) { //RECORRE EL ARRAY NUMERICO Y LO CONVIERTE EN CARACTER.
 
         let numero = captcha_numerico[i]
-        captcha.push(caracteres[numero])
+        captcha.push(caracteres[numero]) //Se pushea al array Captcha el caracter[ubicacion en el array] del array Caracteres.
     }
     captcha = captcha.join("") //CONVIERTE EL ARRAY EN STRING Y UNE LOS CARACTERES
     //console.log(captcha)
